@@ -1,2 +1,2 @@
 # blackrose
-Open Source Multi-Language Trojan/Malware/Ransomware Based incorporated Project&lt; seeking out helpers to build it, currently 'Project Files' &amp; an Official ReadMe.md to be dropped before Midnight Last day of June, 2024!
+Open Source Malware/Ransomware Based Project&lt; seeking out helpers to build it. (09/01/2024) Linux@null.net
