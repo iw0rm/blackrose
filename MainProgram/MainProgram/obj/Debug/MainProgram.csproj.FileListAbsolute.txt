@@ -1,0 +1,7 @@
+C:\Users\sin4amin\source\repos\MainProgram\MainProgram\bin\Debug\MainProgram.exe.config
+C:\Users\sin4amin\source\repos\MainProgram\MainProgram\bin\Debug\MainProgram.exe
+C:\Users\sin4amin\source\repos\MainProgram\MainProgram\bin\Debug\MainProgram.pdb
+C:\Users\sin4amin\source\repos\MainProgram\MainProgram\obj\Debug\MainProgram.csproj.AssemblyReference.cache
+C:\Users\sin4amin\source\repos\MainProgram\MainProgram\obj\Debug\MainProgram.csproj.CoreCompileInputs.cache
+C:\Users\sin4amin\source\repos\MainProgram\MainProgram\obj\Debug\MainProgram.exe
+C:\Users\sin4amin\source\repos\MainProgram\MainProgram\obj\Debug\MainProgram.pdb
