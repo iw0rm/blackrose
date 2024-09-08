@@ -1,0 +1,11 @@
+{
+
+    "mutex_name": "<MutexName>",
+
+    "startup_name": "<StartupName>",
+
+    "startup_path": "<StartupPath>",
+
+    "encryption_key_length": 2048
+
+}
