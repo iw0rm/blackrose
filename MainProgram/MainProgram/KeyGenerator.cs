@@ -1,28 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using System.Security.Cryptography;
-using System.IO;
 
-namespace KeyGenerator
+namespace blkrse
 {
-    public class KeyPair
+    internal class KeyGen
     {
-        public static string GenerateKeys()
-        {
-            using (var rsa = new RSACryptoServiceProvider(2048))
-            {
-                // Save the public key
-                var publicKey = rsa.ToXmlString(false);
-                File.WriteAllText("publicKey.xml", publicKey);
-                // Save the private key
-                var privateKey = rsa.ToXmlString(true);
-                File.WriteAllText("privateKey.xml", privateKey);
+        private const string RandomChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789/*-+=:;,ùµ$^-)àç!è§('é&|@#{[^{}[]`´~<>\\¶¥¤¼»º§¦©ª«¬­®¯°±²Þß÷ö";
+        private static Random RandomGeneration = new Random();
 
-                return "Keys saved to publicKey.xml and privateKey.xml";
+        internal static string GenerateKey()
+        {
+            List<byte> byteKey = new List<byte>();
+            int exactSize = (256 - 1) / 8;
+            for (var i = 0; i <= exactSize; i++)
+            {
+                byteKey.Add(Convert.ToByte(RandomChar[RandomGeneration.Next(0, RandomChar.Length)]));
             }
+            return Encoding.Default.GetString(byteKey.ToArray());
         }
     }
 }
